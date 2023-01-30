@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/TejaMedical/static/css/main.e6c13ad2.css",
-    "main.js": "/TejaMedical/static/js/main.8f1f7d1a.js",
+    "main.js": "/TejaMedical/static/js/main.89351e1d.js",
     "static/js/787.145e069e.chunk.js": "/TejaMedical/static/js/787.145e069e.chunk.js",
     "index.html": "/TejaMedical/index.html",
     "main.e6c13ad2.css.map": "/TejaMedical/static/css/main.e6c13ad2.css.map",
-    "main.8f1f7d1a.js.map": "/TejaMedical/static/js/main.8f1f7d1a.js.map",
+    "main.89351e1d.js.map": "/TejaMedical/static/js/main.89351e1d.js.map",
     "787.145e069e.chunk.js.map": "/TejaMedical/static/js/787.145e069e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.8f1f7d1a.js"
+    "static/js/main.89351e1d.js"
   ]
 }
