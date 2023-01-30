@@ -81,8 +81,11 @@ const AllCustomers = () => {
                     });
                   }
                 });
-                customer.TotalSavings = TotalAmount - CurrentWallet;
+                customer.TotalSavings = Number(
+                  (TotalAmount - CurrentWallet).toFixed(2)
+                );
                 customer.CurrentWallet = CurrentWallet;
+                console.log("TotalSavings ", customer.TotalSavings);
               }
 
               customersList.push(customer);
