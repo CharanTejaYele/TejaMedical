@@ -10,8 +10,6 @@ import {
 import { app } from "../firebase-config";
 import { Formatnumber, NotExpired } from "./GenericUtils";
 
-
-
 const db = getDatabase();
 const dbRef = ref(getDatabase());
 export const auth = getAuth(app);
@@ -35,13 +33,31 @@ export const AddToReferrer = async (
           const AmountToAdd = (() => {
             switch (true) {
               case temp >= 100 && temp < 500: {
-                return (BillAmount - Number(CurrentWallet)) * 0.02;
+                return (
+                  Math.round(
+                    ((BillAmount - Number(CurrentWallet)) * 0.02 +
+                      Number.EPSILON) *
+                      100
+                  ) / 100
+                );
               }
               case temp >= 500 && temp < 1000: {
-                return (BillAmount - Number(CurrentWallet)) * 0.035;
+                return (
+                  Math.round(
+                    ((BillAmount - Number(CurrentWallet)) * 0.035 +
+                      Number.EPSILON) *
+                      100
+                  ) / 100
+                );
               }
               case temp >= 1000: {
-                return (BillAmount - Number(CurrentWallet)) * 0.05;
+                return (
+                  Math.round(
+                    ((BillAmount - Number(CurrentWallet)) * 0.05 +
+                      Number.EPSILON) *
+                      100
+                  ) / 100
+                );
               }
               default:
                 return undefined;
