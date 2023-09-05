@@ -132,9 +132,6 @@ const AllCustomers = () => {
               <TableCell sx={{ fontWeight: "600" }} align="right">
                 Total Purchased
               </TableCell>
-              <TableCell sx={{ fontWeight: "600" }} align="right">
-                Total Savings
-              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -152,7 +149,6 @@ const AllCustomers = () => {
                 </TableCell>
                 <TableCell align="right">{row.CurrentWallet}</TableCell>
                 <TableCell align="right">{row.TotalPurchase}</TableCell>
-                <TableCell align="right">{row.TotalSavings}</TableCell>
               </TableRow>
             ))}
           </TableBody>
